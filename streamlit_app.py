@@ -14,7 +14,7 @@ with st.sidebar:
         ["Home", "Sobre", "Contato", "Projeto", 
          "Fatura MES 03",
          "Curso Integrado em Informática",
-         
+         ],
         icons=["house", "info", "envelope", "file-earmark-code", "database", "database", "database"],
         menu_icon="cast",
         default_index=0
