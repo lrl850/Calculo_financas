@@ -41,3 +41,9 @@ elif pagina == "Contato":
 elif pagina == "Fatura MES 03":
     st.title("Fatura MES 03")
     st.write("Vamos ver como está sua fatura")
+
+    # carregando os dados 
+    df = pd.read_excel("Nubank_Mes_03.xlsx")
+    
+    #exibir dados 
+    st.dataframe(df)
