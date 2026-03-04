@@ -25,3 +25,20 @@ with st.sidebar:
 if pagina == "Home":
     st.title("Página Inicial")
     st.write("Bem-vindo!")
+# Página: Sobre
+elif pagina == "Sobre":
+    st.title("Sobre")
+    st.write("Informações sobre o projeto.")
+
+# Página: Contato
+elif pagina == "Contato":
+    st.title("Contato")
+    st.write("Envie-nos uma mensagem.")
+
+
+# Página: Projeto
+elif pagina == "Projeto":
+    st.title("Página do Projeto")
+    st.write("Detalhes do projeto.")
+    if st.button("Ir para DataLake"):
+        st.session_state.pagina = "DataLake"
