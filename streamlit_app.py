@@ -12,7 +12,7 @@ with st.sidebar:
     pagina = option_menu(
         "Menu",
         ["Home", "Sobre", "Contato", "Projeto", 
-         "Curso Integrado em Eletroeletrônica",
+         "Fatura MES 03",
          "Curso Integrado em Informática",
          "Curso Integrado em Administração"],
         icons=["house", "info", "envelope", "file-earmark-code", "database", "database", "database"],
