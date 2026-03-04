@@ -13,7 +13,7 @@ with st.sidebar:
         "Menu",
         ["Home", "Sobre", "Contato", "Projeto", 
          "Fatura MES 03",
-         "Curso Integrado em Informática",
+         "Fatura Mês 04",
          ],
         icons=["house", "info", "envelope", "file-earmark-code", "database", "database", "database"],
         menu_icon="cast",
@@ -36,9 +36,8 @@ elif pagina == "Contato":
     st.write("Envie-nos uma mensagem.")
 
 
-# Página: Projeto
-elif pagina == "Projeto":
-    st.title("Página do Projeto")
-    st.write("Detalhes do projeto.")
-    if st.button("Ir para DataLake"):
-        st.session_state.pagina = "DataLake"
+# PAGAINA PROJETO CARTAO_CREDDITO
+
+elif pagina == "Fatura MES 03":
+    st.title("Fatura MES 03")
+    st.write("Vamos ver como está sua fatura")
