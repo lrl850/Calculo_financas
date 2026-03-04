@@ -47,3 +47,14 @@ elif pagina == "Fatura MES 03":
     
     #exibir dados 
     st.dataframe(df)
+
+    # graficos
+
+    # Gráfico interativo com escolha de colunas
+    colunas = df.columns
+    x_col = st.selectbox("Selecione a coluna para o eixo X", colunas)
+    y_col = st.selectbox("Selecione a coluna para o eixo Y", colunas)
+
+    if x_col and y_col:
+        fig = px.line(df, x=x_col, y=y_col, title=f"Gráfico de {x_col} vs {y_col}")
+        st.plotly_chart(fig)
