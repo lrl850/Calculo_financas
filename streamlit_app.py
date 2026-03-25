@@ -175,15 +175,7 @@ def brl(v):
     return f"R$ {v:,.2f}".replace(",","X").replace(".",",").replace("X",".")
 
 # ── Upload e configurações na sidebar ─────────────────────────────────────────
-with st.sidebar:
-    st.markdown("### ⚙️ Configurações")
-    upload = st.file_uploader("📂 Carregar novo .xlsx", type=["xlsx"])
-    st.markdown("---")
-    ordenar = st.selectbox("Ordenar categorias", ["Valor ↓","Valor ↑","Nome A→Z"])
 
-df = load_data(upload)
-categorias = df.groupby("Categoria")["Valor"].sum().sort_values(ascending=False).index.tolist()
-color_map = {c: PALETTE[i % len(PALETTE)] for i, c in enumerate(categorias)}
 
 # ── Header ─────────────────────────────────────────────────────────────────────
 st.markdown("""
